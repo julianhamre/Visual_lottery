@@ -4,17 +4,8 @@
       this.selected = [];
     }
 
-    get() {
-      return this.selected;
-    }
-
-    in(number) {
-      return this.selected.includes(number);
-    }
-
     add(number) {
       this.selected.push(number);
-      this.selected = this.selected;
       return this;
     }
 
@@ -41,7 +32,7 @@
 </script>
 
 <p>
-  {numbers.get()}
+  {numbers.selected}
 </p>
 
 <p>
